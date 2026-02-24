@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Biography</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #e5e5e5;
+      color: #111;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      max-width: 800px;
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.15);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    }
+
+    @media (max-width: 720px) {
+      .card {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .left {
+      background: #000;
+      color: #ffffff;
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      background: #000;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .tagline {
+      font-size: 0.98rem;
+      opacity: 0.9;
+    }
+
+    .info-list {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      opacity: 0.95;
+    }
+
+    .info-list div + div {
+      margin-top: 4px;
+    }
+
+    .right {
+      padding: 28px 28px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      background: #ffffff;
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #111111;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+
+    .paragraph {
+      font-size: 0.98rem;
+      line-height: 1.7;
+      color: #333333;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .chip {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #ffffff;
+      color: #111111;
+      border: 1px solid #111111;
+    }
+
+    .footer-note {
+      margin-top: 4px;
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <section class="left">
+      <img class="avatar" src="assets/profile.png" alt="Profile photo" />
+      <h1 class="name">Wilmer S Cabarrubias</h1>
+      <p class="tagline">Student • Aspiring Web Developer</p>
+
+      <div class="info-list">
+        <div><strong>Location:</strong>Mayondon Los Banos Laguna</div>
+        <div><strong>Email:</strong> wilmercabarrubias14@gmail.com</div>
+        <div><strong>Interests:</strong> Coding, online games, gym</div>
+      </div>
+    </section>
+
+    <section class="right">
+      <div>
+        <h2 class="section-title">About Me</h2>
+        <p class="paragraph">
+            I am passionate about coding, especially creating interactive and engaging online games that challenge both logic and creativity. Developing games allows me to improve my problem-solving skills while exploring new technologies and programming techniques. In my free time, I enjoy playing online games to analyze how they are designed and to gain inspiration for my own projects. I also spend time at the gym, where I focus on building strength, discipline, and consistency—qualities that also help me stay motivated and dedicated in my coding journey. Balancing technology and fitness keeps me productive, creative, and driven to continuously improve myself.
+       
+    
+       
+        </p>
+      </div>
+
+      <div>
+        <h2 class="section-title">Education & Goals</h2>
+        <p class="paragraph">
+          I am currently studying at LSPU LOS BANOS Laguna. at the program of Bachelor of Science in Information Technology.
+          speacialation in SMP At the of 3rd year in the university. my goal is to graduate and find a job that suit my skills.
+          
+          
+        </p>
+      </div>
+
+      <div>
+        <h2 class="section-title">Skills & Hobbies</h2>
+        <div class="chips">
+          <span class="chip">Back End Developer</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript (learning)</span>
+          <span class="chip">Online Games</span>
+          <span class="chip">Gym</span>
+        </div>
+        <p class="footer-note">
+          I believe that curiosity, consistency, and kindness are the keys to growing
+          both as a person and a professional.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
